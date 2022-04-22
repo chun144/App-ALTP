@@ -687,6 +687,7 @@ class PlayFragment : BaseFragment(), View.OnClickListener {
                 R.id.ib_stop -> {
                     mediaPlayer.release()
                     openDialogEnd(false)
+                    asyn.cancel(true)
                 }
                 R.id.ib_refresh -> {
                     binding.caseA.isClickable = true
